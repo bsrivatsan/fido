@@ -28,6 +28,8 @@ public class ScrollingActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        // call tracking functions
     }
 
     @Override
@@ -50,4 +52,18 @@ public class ScrollingActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    // trackers
+    public void startTrackingAcceleration() {}
+    public void startTrackingObstacles() {}
+    public void startTrackingVoice() {}
+
+    // listeners
+    public void OnFidoCall() {}
+
+    public void OnObstacleApproaching() {}
+
+    public void OnFall() {}
+
+
 }
